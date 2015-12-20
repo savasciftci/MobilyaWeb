@@ -82,7 +82,7 @@
       <div class="row">
         
         <!-- Start Service Icon 1 -->
-        <div class="col-md-4 col-sm-6 service-box service-center">
+        <div class="col-md-3 col-sm-6 service-box service-center">
            <div class="service-boxed">
               <div class="service-icon" style="margin-top:-25px;">
                 <i class="fa fa-magic icon-medium-effect icon-effect-2"></i>
@@ -96,7 +96,7 @@
     <!-- End Service Icon 1 -->
     
     <!-- Start Service Icon 2 -->
-    <div class="col-md-4 col-sm-6 service-box service-center">
+    <div class="col-md-3 col-sm-6 service-box service-center">
      <div class="service-boxed">
         <div class="service-icon" style="margin-top:-25px;">
           <i class="fa fa-eye icon-medium-effect icon-effect-2"></i>
@@ -110,7 +110,7 @@
 <!-- End Service Icon 2 -->
 
 <!-- Start Service Icon 3 -->
-<div class="col-md-4 col-sm-6 service-box service-center">
+<div class="col-md-3 col-sm-6 service-box service-center">
    <div class="service-boxed">
       <div class="service-icon" style="margin-top:-25px;">
         <i class="fa fa-code icon-medium-effect icon-effect-1"></i>
@@ -124,7 +124,7 @@
 <!-- End Service Icon 3 -->
 
 <!-- Start Service Icon 4 -->
-<!--<div class="col-md-4 col-sm-6 service-box service-center">
+<div class="col-md-3 col-sm-6 service-box service-center">
    <div class="service-boxed">
       <div class="service-icon" style="margin-top:-25px;">
         <i class="fa fa-rocket icon-medium-effect icon-effect-1"></i>
@@ -134,7 +134,7 @@
         <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Lorem Ipsum is simply dummy text of the printing.</p>
     </div>
 </div>
-</div>-->
+</div>
 <!-- End Service Icon 4 -->
 
 </div>
@@ -144,45 +144,6 @@
 <div class="hr1 margin-top"></div>
 
      
-       <!-- Start Recent Projects Carousel -->
-        
-                               
-                                            
-
-                
-                
-                
-                
-
-               
-
-               
-
-                
-              
-                
-                
-                
-                
-                
-                <!-- Divider -->
-                <div class="hr1 margin-60"></div>
-            </div>
-            
-            
-                
-                
-                <!-- Divider -->
-                <div class="hr1 margin-60"></div>
-            </div>
-            
-            
-            
-        
-        
-        
-        
-        
        <!-- Start Recent Projects Carousel -->
         
 
@@ -370,18 +331,20 @@
 					</div>
 				</div>
 				<!-- End Recent Projects Carousel -->
-        
-        
-        
-            
-            
-            
-        </div>
-    </div>
-    <!-- End Content -->
+              
+                                
+                                
 
 <!-- Divider -->
 <div class="hr1 margin-60"></div>
+
+
+<!-- Divider -->
+<div class="hr1 margin-60"></div>
+
+
+
+
 </div>
 </div>
 <!-- End Content -->
