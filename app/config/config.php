@@ -10,6 +10,7 @@ define("SITE_URL_BCSS", "http://localhost/mobilyaweb/app/views/Template_BackEnd/
 define("SITE_URL_BJS", "http://localhost/mobilyaweb/app/views/Template_BackEnd/assets/js");
 define("SITE_URL_BIMG", "http://localhost/mobilyaweb/app/views/Template_BackEnd/assets/images");
 
+
 //Tempalte Front end Url yapılandırılması
 define("SITE_URL_FASSET", "http://localhost/mobilyaweb/app/views/Template_FrontEnd/assets/asset");
 define("SITE_URL_FCSS", "http://localhost/mobilyaweb/app/views/Template_FrontEnd/assets/css");
