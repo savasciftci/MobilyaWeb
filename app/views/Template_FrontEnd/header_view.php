@@ -4,11 +4,9 @@
 <html lang="en">
 
     <head>
+        <title>Margo | Anasayfa</title>
 
-        <!-- Basic -->
-        <title>Margo | Home</title>
-
-        <!-- Define Charset -->
+        
         <meta charset="utf-8">
 
         <!-- Responsive Metatag -->
