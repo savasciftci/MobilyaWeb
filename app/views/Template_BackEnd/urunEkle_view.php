@@ -1,22 +1,23 @@
  
 <article class="module width_full">
 	<header><h3>Ürün Ekle</h3></header>
-		
-		<form action="" method="post">
+		<form action="<?php echo SITE_URL."/admin/urunEkle";?>" method="post">
 			<div class="module_content">
-					<fieldset>
+                            <fieldset>
 						<label>ÜRÜN AÇIKLAMA</label>
-						<input maxlength="27" type="text" name="konu_baslik" />
+						<input maxlength="27" type="text" name="urun_aciklama" />
 					</fieldset>
 					<fieldset>
 						<label>ÜRÜN KATEGORİSİ</label>
-						<select name="konu_kategori">
-							
+						<select name="urun_kategori">
+                                                  <?php for ($i = 0; $i < count($model[0]); $i++) { ?> 
+                                                    <option value="<?php echo $model[0][$i]["kategori_id"]; ?>"><?php echo $model[0][$i]["kategori_adi"]; ?></option>
+                                                  <?php } ?>
 						</select>
 					</fieldset>
 					<article class="module width_full" style="margin-left: 0px">
                                     <header><h3 style="text-indent: 9px; font-size: 12 px;">Dosya Yükle</h3></header>
-                                            <form action="" method="post" enctype="multipart/form-data">
+                                           
                                                     <div class="module_content">
                                                             <fieldset>
                                                                     <div style="padding-left: 15px">
@@ -29,7 +30,7 @@
                                                                     <input type="submit" value="Fotğraf Yükle" class="alt_btn">
                                                             </div>
                                                     </footer>
-                                            </form>
+                                            
                             </article>
 					
 			</div>

@@ -1,0 +1,1 @@
+<h4 class="alert_success">Başrayıla Silindi!</h4>

@@ -23,10 +23,12 @@
                             <input type="hidden" name="id" value="<?php echo $model[0][$i]["kategori_id"]; ?>">
                             <input type="hidden" name="kategori_adi" value="<?php echo $model[0][$i]["kategori_adi"]; ?>">
                             <input type="image" src="<?php echo SITE_URL_BIMG; ?>/icn_edit.png" title="Edit"> </form>
+                        
                         <form action="<?php echo SITE_URL . "/admin/kategoriSil"; ?>" method="post">
                             <input type="hidden" name="id" value="<?php echo $model[0][$i]["kategori_id"]; ?>">
-                            <input type="image" src="<?php echo SITE_URL_BIMG; ?>/icn_trash.png" title="Trash"></td> </form>
+                            <input type="image" src="<?php echo SITE_URL_BIMG; ?>/icn_trash.png" title="Trash"></td></form>
                         <?php } ?>
+                        
             </tbody> 
         </table>	
     </div>

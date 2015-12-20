@@ -50,6 +50,46 @@ class Panel_Model extends Model {
      public function kategoridelete($gelenid) {
         return ($this->db->delete("kategoriler","kategori_id=$gelenid"));
     }
+    //sayfa adı select sorgusu
+     public function sayfaAdiselect($sayfa_baslik) {
+        $sql = "SELECT sayfa_id FROM sayfalar WHERE sayfa_baslik = '$sayfa_baslik'";
+        return $this->db->select($sql);
+    }
+    public function sayfainsert($data) {
+        return ($this->db->insert("sayfalar", $data));
+    }
+    //kategori select sorgusu
+     public function sayfaselect() {
+        $sql = "SELECT * FROM sayfalar";
+        return $this->db->select($sql);
+    }
+    public function sayfaupdate($data, $gelenid) {
+        return ($this->db->update("sayfalar", $data, "sayfa_id=$gelenid"));
+    }
+    public function sayfadelete($gelenid) {
+        return ($this->db->delete("sayfalar","sayfa_id=$gelenid"));
+    }
+    public function uruninsert($data) {
+        return ($this->db->insert("urunler", $data));
+    }
+     public function urunselect() {
+        $sql = "SELECT * FROM urunler";
+        return $this->db->select($sql);
+    }
+    public function urunupdate($data, $gelenid) {
+        return ($this->db->update("urunler", $data, "urun_id=$gelenid"));
+    }
+      public function urundelete($gelenid) {
+        return ($this->db->delete("urunler","urun_id=$gelenid"));
+    }
+    public function ayarupdate($ayarguncelle, $gelenid) { 
+        return ($this->db->update("ayar", $ayarguncelle, "id=$gelenid"));
+    }
+      //ayar select sorgusu
+     public function ayarselect() {
+        $sql = "SELECT * FROM ayar";
+        return $this->db->select($sql);
+    }
 }
 
 ?>
