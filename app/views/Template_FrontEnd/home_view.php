@@ -145,6 +145,8 @@
 
      
        <!-- Start Recent Projects Carousel -->
+        
+
 				<div class="recent-projects">
 					<h4 class="title"><span>Ürünlerimiz</span></h4>
 					<div class="projects-carousel touch-carousel">
@@ -329,6 +331,9 @@
 					</div>
 				</div>
 				<!-- End Recent Projects Carousel -->
+              
+                                
+                                
 
 <!-- Divider -->
 <div class="hr1 margin-60"></div>
