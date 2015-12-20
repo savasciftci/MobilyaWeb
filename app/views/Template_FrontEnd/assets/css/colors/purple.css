@@ -25,19 +25,7 @@ a {
 .service-box .read-more {
 	color: #6a3da3;
 }
-.slicknav_btn {
-  border-color: #6a3da3;
-}
-.slicknav_btn:hover {
-  background: #6a3da3;
-}
-.slicknav_menu .slicknav_icon-bar {
-  background: #6a3da3;
-}
-.slicknav_nav a:hover,
-.slicknav_nav .active {
-  color: #6a3da3;
-}
+
 a.main-button, input[type="submit"] {
 	background-color: #6a3da3;
 }

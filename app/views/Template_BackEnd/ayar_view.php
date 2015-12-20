@@ -1,5 +1,4 @@
 
-<section id="main" class="column">
 <article class="module width_full">
     <header><h3>Genel Ayarlar</h3></header>
     <form action="" method="post">
@@ -47,4 +46,4 @@
         </footer>
     </form>
 </article><!-- end of post new article -->
-<div class="spacer"></div></section>
+<div class="spacer"></div>

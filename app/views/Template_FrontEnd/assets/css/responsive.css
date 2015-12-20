@@ -423,34 +423,3 @@
 	}
     
 }
-
-@media screen and (max-width: 767px) {
-	.navbar-toggle{
-	    display: none;
-	  }
-	  .navbar-header{
-	    position: relative;
-	  }
-	  .margo-logo-wrapper{
-	    position: absolute;
-	    top: 0;
-	  }
-	.navbar-brand{
-		position: absolute;
-	    top: 0;
-	}
-	/* #menu is the original menu */
-	.js #wpb-mobile-menu {
-		display:none;
-	}
-	
-	.js .slicknav_menu {
-		display:block;
-	}
-}
-/* SlickMenu responsive */
-@media screen and (min-width: 768px) {
-  .slicknav_menu{
-    display: none;
-  }
-}

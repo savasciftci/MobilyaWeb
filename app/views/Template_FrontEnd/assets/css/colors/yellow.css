@@ -29,19 +29,7 @@ a {
 a.main-button, input[type="submit"] {
 	background-color: #f8ba01;
 }
-.slicknav_btn {
-  border-color: #f8ba01;
-}
-.slicknav_btn:hover {
-  background: #f8ba01;
-}
-.slicknav_menu .slicknav_icon-bar {
-  background: #f8ba01;
-}
-.slicknav_nav a:hover,
-.slicknav_nav .active {
-  color: #f8ba01;
-}
+
 .navbar-default .navbar-nav > li:hover > a,
 .navbar-default .navbar-nav > li > a.active {
 	color: #f8ba01;

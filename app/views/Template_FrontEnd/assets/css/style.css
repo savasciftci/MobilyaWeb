@@ -312,7 +312,7 @@ input[type="submit"] {
 	width: 100%;
 	height: 100%;
 	background: #fff;
-	z-index: 99999999999;
+	z-index: 9999999999;
 }
 
 .spinner {
@@ -554,16 +554,7 @@ ul.social-list li a i {
 ul.social-list li:last-child a i {
 	border-right: 1px solid #f2f2f2;
 }
-.wpb-mobile-menu{
-	display: none;
-}
 
-.slicknav_menu{
-	display: none;
-}
-.navbar-toggle{
-	display: none;
-}
 .navbar {
 	margin-bottom: 0;
 	background: #fff;
@@ -747,7 +738,6 @@ ul.social-list li:last-child a i {
 	display: block;
 	color: #666;
 	width: 36px;
-	cursor: pointer;
 	height: 36px;
 	border-radius: 2px;
 	-webkit-border-radius: 2px;
@@ -5164,6 +5154,13 @@ ul.footer-nav li a:hover {
 }
 
 
+
+
+
+
+
+
+
 /******* Style Switcher *******/
 .switcher-box {
 	width: 212px;
@@ -5171,7 +5168,7 @@ ul.footer-nav li a:hover {
 	left: -212px;
 	top: 160px;
 	text-align: center;
-	z-index: 99999999;
+	z-index: 99999999999;
 	background-color: #fff;
 	border-radius: 0 0 2px 0;
 	border-radius: 0 5px 5px 0;
@@ -5182,9 +5179,6 @@ ul.footer-nav li a:hover {
     -moz-transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
     -o-transition: all 0.4s ease-in-out;
-}
-.switcher-box a{
-	cursor: pointer;
 }
 .switcher-box h4 {
 	display: block;

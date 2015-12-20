@@ -5,18 +5,18 @@
 		<hr/>
                 <h3>Sabit Sayfalar</h3>
 		<ul class="toggle">
-			<li class="icn_new_article"><a href="#">Sabit Sayfalar</a></li>
-			<li class="icn_edit_article"><a href="#">Sayfa Ekle</a></li>
+			<li class="icn_new_article"><a href="<?php echo SITE_URL; ?>/admin/sayfalar">Sabit Sayfalar</a></li>
+			<li class="icn_edit_article"><a href="<?php echo SITE_URL; ?>/admin/sayfaEkle">Sayfa Ekle</a></li>
 		</ul>
                 <h3>Ürünler</h3>
 		<ul class="toggle">
-			<li class="icn_new_article"><a href="#">Yeni Ürün Ekle</a></li>
-			<li class="icn_edit_article"><a href="#">Ürün Düzenle</a></li>
+			<li class="icn_new_article"><a href="<?php echo SITE_URL; ?>/admin/urunEkle">Yeni Ürün Ekle</a></li>
+			<li class="icn_edit_article"><a href="<?php echo SITE_URL; ?>/admin/urunler">Ürünler</a></li>
 		</ul>
                 <h3>Kategoriler</h3>
 		<ul class="toggle">
-			<li class="icn_folder"><a href="#">Yeni Kategori Ekle</a></li>
-			<li class="icn_photo"><a href="#">Kategorileri Düzenle</a></li>
+			<li class="icn_folder"><a href="<?php echo SITE_URL; ?>/admin/kategoriEkle">Yeni Kategori Ekle</a></li>
+			<li class="icn_photo"><a href="<?php echo SITE_URL; ?>/admin/kategoriler">Kategoriler</a></li>
 		</ul>
 		<h3>Admin</h3>
 		<ul class="toggle">
@@ -28,4 +28,5 @@
 			<hr />
 			<p><strong>Copyright &copy; 2015 Website Admin</strong></p>
 		</footer>
-	</aside><!-- end of sidebar -->
+	</aside>
+<section id="main" class="column">

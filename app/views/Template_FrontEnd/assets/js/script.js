@@ -1,14 +1,23 @@
 /* ----------------- Start JS Document ----------------- */
 
+
+
 // Page Loader
 $(window).load(function () {
-    "use strict";    
+    "use strict";
+    
 	$('#loader').fadeOut();
 });
 
 $(document).ready(function ($) {
-	"use strict";	
-	////	Hidder Header	
+	"use strict";
+	
+	
+	
+
+////	Hidder Header
+
+	
 	var headerEle = function () {
 		var $headerHeight = $('header').height();
 		$('.hidden-header').css({ 'height' : $headerHeight  + "px" });
@@ -25,25 +34,29 @@ $(document).ready(function ($) {
     
     /*---------------------------------------------------*/
     /* Progress Bar
-    /*---------------------------------------------------*/    
+    /*---------------------------------------------------*/
+    
+    
     $('.skill-shortcode').appear(function() {
   		$('.progress').each(function(){ 
-    		$('.progress-bar').css('width',  function(){ 
-    			return ($(this).attr('data-percentage')+'%')});
+    		$('.progress-bar').css('width',  function(){ return ($(this).attr('data-percentage')+'%')});
   		});
-	},{accY: -100});	
+	},{accY: -100});
+	
 	
 	
     /*--------------------------------------------------*/
     /* Counter
-    /*--------------------------------------------------*/   
-        
+    /*--------------------------------------------------*/
+    
+    
+    
     $('.timer').countTo();
+
     $('.counter-item').appear(function() {
         $('.timer').countTo();
-    },{
-    	accY: -100
-    });    
+    },{accY: -100});
+    
     
 	
 	/*----------------------------------------------------*/
@@ -62,6 +75,10 @@ $(document).ready(function ($) {
 		cursorborderradius: 0,
 	});
 		
+	
+	
+	
+	
 	/*----------------------------------------------------*/
 	/*	Nav Menu & Search
 	/*----------------------------------------------------*/
@@ -77,7 +94,11 @@ $(document).ready(function ($) {
 	$('.search-form input').blur(function() {
 		$('.search-form').fadeOut(300);
 	});
-				
+	
+	
+	
+	
+	
 	/*----------------------------------------------------*/
 	/*	Back Top Link
 	/*----------------------------------------------------*/
@@ -96,7 +117,10 @@ $(document).ready(function ($) {
         $('html, body').animate({scrollTop: 0}, 600);
         return false;
     })
-		
+	
+	
+	
+	
 	/*----------------------------------------------------*/
 	/*	Sliders & Carousel
 	/*----------------------------------------------------*/
@@ -147,6 +171,7 @@ $(document).ready(function ($) {
 			stopOnHover: returnAutoPlay,
 			transitionStyle : "fade",
 			afterInit : returnSliderProgressBar,
+			afterMove : moved,
 			startDragging : pauseOnDragging
 		});
 		
@@ -168,9 +193,34 @@ $(document).ready(function ($) {
 		$progressBar.append($bar).prependTo($elem);
     }
 	
+	function start() {
+		percentTime = 0;
+		isPause = false;
+		tick = setInterval(interval, 10);
+    };
+ 
+    function interval() {
+		if(isPause === false){
+			percentTime += 1 / time;
+			$bar.css({
+				width: percentTime+"%"
+			});
+			if(percentTime >= 100){
+				$elem.trigger('owl.next')
+			}
+		}
+    }
+	
     function pauseOnDragging(){
       isPause = true;
     }
+	
+    function moved(){
+      clearTimeout(tick);
+      start();
+    }
+	
+	
 	
 	////------- Projects Carousel
 	$(".projects-carousel").owlCarousel({
@@ -678,18 +728,4 @@ $(document).ready(function(){
 		}
 	});
 
-});
-
-/**
- * Slick Nav 
- */
-
-$('.wpb-mobile-menu').slicknav({
-  prependTo: '.navbar-header',
-  parentTag: 'margo',
-  allowParentLinks: true,
-  duplicate: false,
-  label: '',
-  closedSymbol: '<i class="fa fa-angle-right"></i>',
-  openedSymbol: '<i class="fa fa-angle-down"></i>',
 });
