@@ -142,7 +142,7 @@ class Admin extends Controller {
         $form->yonlendir(SITE_URL."/admin/kategoriler",1);
         $this->load->view("Template_BackEnd/header");
         $this->load->view("Template_BackEnd/left");
-        $this->load->view("Template_BackEnd/kategoriEkle");a
+        $this->load->view("Template_BackEnd/kategoriEkle");
         $this->load->view("Template_BackEnd/footer");
     }
 
