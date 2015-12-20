@@ -1,5 +1,4 @@
 <?php
-
 /*
  * Config kısmı genel sabitleri tanımlaya yaramaktadır.Buradan tanımladığımız define ları framework dosyalarımızın
  * istenilen her yerinden ulaşabiliriz.Bu kısma aşağıdaki gibi bir tanımalam yeterli gelecektir.
@@ -10,6 +9,7 @@ define("SITE_URL", "http://localhost/mobilyaweb");
 define("SITE_URL_BCSS", "http://localhost/mobilyaweb/app/views/Template_BackEnd/assets/css");
 define("SITE_URL_BJS", "http://localhost/mobilyaweb/app/views/Template_BackEnd/assets/js");
 define("SITE_URL_BIMG", "http://localhost/mobilyaweb/app/views/Template_BackEnd/assets/images");
+
 //Tempalte Front end Url yapılandırılması
 define("SITE_URL_FASSET", "http://localhost/mobilyaweb/app/views/Template_FrontEnd/assets/asset");
 define("SITE_URL_FCSS", "http://localhost/mobilyaweb/app/views/Template_FrontEnd/assets/css");

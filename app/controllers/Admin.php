@@ -7,6 +7,7 @@ class Admin extends Controller {
         parent::__construct();
     }
 
+    
     public function index() {
         $this->home();
     }
