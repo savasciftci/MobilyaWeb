@@ -5,7 +5,7 @@
 ob_start();
 Session::init();
 //hata mesajlarını gösterme
-error_reporting(0);
+//error_reporting(0);
 //Türkçe Karekter kullanımı
 
 //System dosyalarımı include ediyoruz

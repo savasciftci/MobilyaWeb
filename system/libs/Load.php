@@ -14,9 +14,9 @@ class Load {
         return new $fileName;
     }
     
-    public function view($fileName, $data = false) {
-        if ($data == true) {
-            extract($data);
+    public function view($fileName, $model = false) {
+        if ($model == true) {
+            extract($model);
         }
         include "app/views/" . $fileName . "_view.php";
     }

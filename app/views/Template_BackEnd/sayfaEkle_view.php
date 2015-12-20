@@ -1,6 +1,7 @@
 
 <article class="module width_full">
 			<header><h3>Sayfa Ekle</h3></header>
+                        <form action="" method="post">
 				<div class="module_content">
 						<fieldset>
 							<label>Sayfa Başlığı</label>
@@ -16,4 +17,5 @@
 					<input type="submit" value="Sayfa Ekle" class="alt_btn">					
 				</div>
 			</footer>
+                        </form>
 		</article> 
