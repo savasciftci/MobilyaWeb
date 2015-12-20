@@ -17,55 +17,55 @@
         <meta name="author" content="iThemesLab">
 
         <!-- Bootstrap CSS  -->
-        <link rel="stylesheet" href="<?php echo SITE_URL_FASSET; ?>/css/bootstrap.min.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="<?php echo SITE_FRONT_ASSETS; ?>/css/bootstrap.min.css" type="text/css" media="screen">
 
         <!-- Font Awesome CSS -->
-        <link rel="stylesheet" href="<?php echo SITE_URL_FCSS; ?>/font-awesome.min.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="<?php echo SITE_FRONT_ASSETS_DISTCSS; ?>/font-awesome.min.css" type="text/css" media="screen">
 
         <!-- Slicknav -->
-        <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL_FCSS; ?>/slicknav.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="<?php echo SITE_FRONT_ASSETS_DISTCSS; ?>/slicknav.css" media="screen">
 
         <!-- Margo CSS Styles  -->
-        <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL_FCSS; ?>/style.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="<?php echo SITE_FRONT_ASSETS_DISTCSS; ?>/style.css" media="screen">
 
         <!-- Responsive CSS Styles  -->
-        <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL_FCSS; ?>/responsive.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="<?php echo SITE_FRONT_ASSETS_DISTCSS; ?>/responsive.css" media="screen">
 
         <!-- Css3 Transitions Styles  -->
-        <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL_FCSS; ?>/animate.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="<?php echo SITE_FRONT_ASSETS_DISTCSS; ?>/animate.css" media="screen">
 
         <!-- Color CSS Styles  -->
-        <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL_FCSS; ?>/colors/red.css" title="red" media="screen" />
-        <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL_FCSS; ?>/colors/jade.css" title="jade" media="screen" />
-        <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL_FCSS; ?>/colors/green.css" title="green" media="screen" />
-        <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL_FCSS; ?>/colors/blue.css" title="blue" media="screen" />
-        <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL_FCSS; ?>/colors/beige.css" title="beige" media="screen" />
-        <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL_FCSS; ?>/colors/cyan.css" title="cyan" media="screen" />
-        <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL_FCSS; ?>/colors/orange.css" title="orange" media="screen" />
-        <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL_FCSS; ?>/colors/peach.css" title="peach" media="screen" />
-        <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL_FCSS; ?>/colors/pink.css" title="pink" media="screen" />
-        <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL_FCSS; ?>/colors/purple.css" title="purple" media="screen" />
-        <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL_FCSS; ?>/colors/sky-blue.css" title="sky-blue" media="screen" />
-        <link rel="stylesheet" type="text/css" href="<?php echo SITE_URL_FCSS; ?>/colors/yellow.css" title="yellow" media="screen" />
+        <link rel="stylesheet" type="text/css" href="<?php echo SITE_FRONT_ASSETS_DISTCSS; ?>/colors/red.css" title="red" media="screen" />
+        <link rel="stylesheet" type="text/css" href="<?php echo SITE_FRONT_ASSETS_DISTCSS; ?>/colors/jade.css" title="jade" media="screen" />
+        <link rel="stylesheet" type="text/css" href="<?php echo SITE_FRONT_ASSETS_DISTCSS; ?>/colors/green.css" title="green" media="screen" />
+        <link rel="stylesheet" type="text/css" href="<?php echo SITE_FRONT_ASSETS_DISTCSS; ?>/colors/blue.css" title="blue" media="screen" />
+        <link rel="stylesheet" type="text/css" href="<?php echo SITE_FRONT_ASSETS_DISTCSS; ?>/colors/beige.css" title="beige" media="screen" />
+        <link rel="stylesheet" type="text/css" href="<?php echo SITE_FRONT_ASSETS_DISTCSS; ?>/colors/cyan.css" title="cyan" media="screen" />
+        <link rel="stylesheet" type="text/css" href="<?php echo SITE_FRONT_ASSETS_DISTCSS; ?>/colors/orange.css" title="orange" media="screen" />
+        <link rel="stylesheet" type="text/css" href="<?php echo SITE_FRONT_ASSETS_DISTCSS; ?>/colors/peach.css" title="peach" media="screen" />
+        <link rel="stylesheet" type="text/css" href="<?php echo SITE_FRONT_ASSETS_DISTCSS; ?>/colors/pink.css" title="pink" media="screen" />
+        <link rel="stylesheet" type="text/css" href="<?php echo SITE_FRONT_ASSETS_DISTCSS; ?>/colors/purple.css" title="purple" media="screen" />
+        <link rel="stylesheet" type="text/css" href="<?php echo SITE_FRONT_ASSETS_DISTCSS; ?>/colors/sky-blue.css" title="sky-blue" media="screen" />
+        <link rel="stylesheet" type="text/css" href="<?php echo SITE_FRONT_ASSETS_DISTCSS; ?>/colors/yellow.css" title="yellow" media="screen" />
 
         <!-- Margo JS  -->
-        <script type="text/javascript" src="<?php echo SITE_URL_FJS; ?>/jquery-2.1.4.min.js"></script>
-        <script type="text/javascript" src="<?php echo SITE_URL_FJS; ?>/jquery.migrate.js"></script>
-        <script type="text/javascript" src="<?php echo SITE_URL_FJS; ?>/modernizrr.js"></script>
-        <script type="text/javascript" src="<?php echo SITE_URL_FASSET; ?>/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="<?php echo SITE_URL_FJS; ?>/jquery.fitvids.js"></script>
-        <script type="text/javascript" src="<?php echo SITE_URL_FJS; ?>/owl.carousel.min.js"></script>
-        <script type="text/javascript" src="<?php echo SITE_URL_FJS; ?>/nivo-lightbox.min.js"></script>
-        <script type="text/javascript" src="<?php echo SITE_URL_FJS; ?>/jquery.isotope.min.js"></script>
-        <script type="text/javascript" src="<?php echo SITE_URL_FJS; ?>/jquery.appear.js"></script>
-        <script type="text/javascript" src="<?php echo SITE_URL_FJS; ?>/count-to.js"></script>
-        <script type="text/javascript" src="<?php echo SITE_URL_FJS; ?>/jquery.textillate.js"></script>
-        <script type="text/javascript" src="<?php echo SITE_URL_FJS; ?>/jquery.lettering.js"></script>
-        <script type="text/javascript" src="<?php echo SITE_URL_FJS; ?>/jquery.easypiechart.min.js"></script>
-        <script type="text/javascript" src="<?php echo SITE_URL_FJS; ?>/jquery.nicescroll.min.js"></script>
-        <script type="text/javascript" src="<?php echo SITE_URL_FJS; ?>/jquery.parallax.js"></script>
-        <script type="text/javascript" src="<?php echo SITE_URL_FJS; ?>/mediaelement-and-player.js"></script>
-        <script type="text/javascript" src="<?php echo SITE_URL_FJS; ?>/jquery.slicknav.js"></script>
+        <script type="text/javascript" src="<?php echo SITE_FRONT_ASSETS_DISTJS; ?>/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="<?php echo SITE_FRONT_ASSETS_DISTJS; ?>/jquery.migrate.js"></script>
+        <script type="text/javascript" src="<?php echo SITE_FRONT_ASSETS_DISTJS; ?>/modernizrr.js"></script>
+        <script type="text/javascript" src="<?php echo SITE_FRONT_ASSETS; ?>/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="<?php echo SITE_FRONT_ASSETS_DISTJS; ?>/jquery.fitvids.js"></script>
+        <script type="text/javascript" src="<?php echo SITE_FRONT_ASSETS_DISTJS; ?>/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="<?php echo SITE_FRONT_ASSETS_DISTJS; ?>/nivo-lightbox.min.js"></script>
+        <script type="text/javascript" src="<?php echo SITE_FRONT_ASSETS_DISTJS; ?>/jquery.isotope.min.js"></script>
+        <script type="text/javascript" src="<?php echo SITE_FRONT_ASSETS_DISTJS; ?>/jquery.appear.js"></script>
+        <script type="text/javascript" src="<?php echo SITE_FRONT_ASSETS_DISTJS; ?>/count-to.js"></script>
+        <script type="text/javascript" src="<?php echo SITE_FRONT_ASSETS_DISTJS; ?>/jquery.textillate.js"></script>
+        <script type="text/javascript" src="<?php echo SITE_FRONT_ASSETS_DISTJS; ?>/jquery.lettering.js"></script>
+        <script type="text/javascript" src="<?php echo SITE_FRONT_ASSETS_DISTJS; ?>/jquery.easypiechart.min.js"></script>
+        <script type="text/javascript" src="<?php echo SITE_FRONT_ASSETS_DISTJS; ?>/jquery.nicescroll.min.js"></script>
+        <script type="text/javascript" src="<?php echo SITE_FRONT_ASSETS_DISTJS; ?>/jquery.parallax.js"></script>
+        <script type="text/javascript" src="<?php echo SITE_FRONT_ASSETS_DISTJS; ?>/mediaelement-and-player.js"></script>
+        <script type="text/javascript" src="<?php echo SITE_FRONT_ASSETS_DISTJS; ?>/jquery.slicknav.js"></script>
 
 
   <!--[if IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
@@ -146,9 +146,7 @@
                     </div>
                     <!-- .container -->
                 </div>
-                <!-- .top-bar -->
-                <!-- End Top Bar -->
-
+       
 
                 <!-- Start  Logo & Naviagtion  -->
                 <div class="navbar navbar-default navbar-top">
