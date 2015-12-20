@@ -3,7 +3,7 @@
 class Admin extends Controller {
 
     public function __construct() {
-        error_log("admin.php");
+       // error_log("admin.php");
         parent::__construct();
     }
 
@@ -12,13 +12,19 @@ class Admin extends Controller {
     }
 
     public function home() {
+        if (session::get("login") == true) {
         $this->load->view("Template_BackEnd/header");
         $this->load->view("Template_BackEnd/left");
         $this->load->view("Template_BackEnd/home");
         $this->load->view("Template_BackEnd/footer");
+        }
+        else{
+            $this->load->view("Entry/loginForm");
+        }
     }
 
     public function sayfalar() {
+        if (session::get("login") == true) {
         $model = $this->load->model("Panel_Model");
         $veriler = array();
         $veriler[0]=$model->sayfaselect();
@@ -27,10 +33,14 @@ class Admin extends Controller {
         $this->load->view("Template_BackEnd/left");
         $this->load->view("Template_BackEnd/sayfalar",$veriler);
         $this->load->view("Template_BackEnd/footer");
+        }
+        else{
+            $this->load->view("Entry/loginForm");
+        }
     }
 
     public function sayfaEkle() {
-
+        if (session::get("login") == true) {
         if ($_POST) {
             $form = $this->load->otherClasses('Form');
             $model = $this->load->model("Panel_Model");
@@ -73,10 +83,15 @@ class Admin extends Controller {
             $this->load->view("Template_BackEnd/sayfaEkle");
             $this->load->view("Template_BackEnd/footer");
         }
+        }
+        else{
+            $this->load->view("Entry/loginForm");
+        }
     }
     
 
    public function sayfaDuzenle() {
+       if (session::get("login") == true) {
            $guncelle = $_POST["guncelle"];
             if($guncelle==1){
             $id = $_POST["id"];
@@ -114,9 +129,14 @@ class Admin extends Controller {
         $this->load->view("Template_BackEnd/left"); 
         $this->load->view("Template_BackEnd/sayfaDuzenle");
         $this->load->view("Template_BackEnd/footer");
+        }
+        else{
+            $this->load->view("Entry/loginForm");
+        }
     }
 
     public function sayfaSil() {
+        if (session::get("login") == true) {
         $id = $_POST["id"];
         if ($_POST) {
             $form = $this->load->otherClasses('Form');
@@ -136,9 +156,14 @@ class Admin extends Controller {
         $this->load->view("Template_BackEnd/left");
         $this->load->view("Template_BackEnd/Sil");
         $this->load->view("Template_BackEnd/footer");
+        }
+        else{
+            $this->load->view("Entry/loginForm");
+        }
     }
 
     public function kategoriler() {
+        if (session::get("login") == true) {
         $model = $this->load->model("Panel_Model");
         $veriler = array();
         $veriler[0]=$model->kategoriselect();
@@ -147,10 +172,14 @@ class Admin extends Controller {
         $this->load->view("Template_BackEnd/left");
         $this->load->view("Template_BackEnd/kategoriler",$veriler);
         $this->load->view("Template_BackEnd/footer");
+        }
+        else{
+            $this->load->view("Entry/loginForm");
+        }
     }
    
     public function kategoriEkle() {
-
+    if (session::get("login") == true) {
         if ($_POST) {
             $form = $this->load->otherClasses('Form');
             $model = $this->load->model("Panel_Model");
@@ -185,9 +214,14 @@ class Admin extends Controller {
             $this->load->view("Template_BackEnd/kategoriEkle");
             $this->load->view("Template_BackEnd/footer");
         }
+        }
+        else{
+            $this->load->view("Entry/loginForm");
+        }
     }
 
     public function kategoriDuzenle() {
+        if (session::get("login") == true) {
            $guncelle = $_POST["guncelle"];
             if($guncelle==1){
             $id = $_POST["id"];
@@ -223,9 +257,14 @@ class Admin extends Controller {
         $this->load->view("Template_BackEnd/left"); 
         $this->load->view("Template_BackEnd/kategoriDuzenle");
         $this->load->view("Template_BackEnd/footer");
+        }
+        else{
+            $this->load->view("Entry/loginForm");
+        }
     }
 
     public function kategoriSil() {
+        if (session::get("login") == true) {
         $id = $_POST["id"];
         $form = $this->load->otherClasses('Form');
         $model = $this->load->model("Panel_Model");
@@ -236,9 +275,14 @@ class Admin extends Controller {
         $this->load->view("Template_BackEnd/left");
         $this->load->view("Template_BackEnd/kategoriEkle");
         $this->load->view("Template_BackEnd/footer");
+        }
+        else{
+            $this->load->view("Entry/loginForm");
+        }
     }
 
      public function ayar() {
+         if (session::get("login") == true) {
         $model = $this->load->model("Panel_Model");
         $form = $this->load->otherClasses('Form');
         $data = array();
@@ -294,10 +338,14 @@ class Admin extends Controller {
         $this->load->view("Template_BackEnd/left");
         $this->load->view("Template_BackEnd/ayar",$data);
         $this->load->view("Template_BackEnd/footer");
+        }
+        else{
+            $this->load->view("Entry/loginForm");
+        }
     }
 
     public function urunEkle() {
-         
+         if (session::get("login") == true) {
         $model = $this->load->model("Panel_Model");
         $veriler = array();
         $veriler[0]=$model->kategoriselect();
@@ -329,10 +377,15 @@ class Admin extends Controller {
             $this->load->view("Template_BackEnd/left");
             $this->load->view("Template_BackEnd/urunEkle",$veriler);
             $this->load->view("Template_BackEnd/footer");
+            }
+        else{
+            $this->load->view("Entry/loginForm");
+        }
         
     }
 
     public function urunler() {
+        if (session::get("login") == true) {
         $model = $this->load->model("Panel_Model");
         $veriler = array();
         $veriler[0]=$model->urunselect();
@@ -341,9 +394,14 @@ class Admin extends Controller {
         $this->load->view("Template_BackEnd/left");
         $this->load->view("Template_BackEnd/urunler",$veriler);
         $this->load->view("Template_BackEnd/footer");
+        }
+        else{
+            $this->load->view("Entry/loginForm");
+        }
     }
 
     public function urunDuzenle() {
+        if (session::get("login") == true) {
            $guncelle = $_POST["guncelle"];
             $model = $this->load->model("Panel_Model");
         $veriler = array();
@@ -377,9 +435,14 @@ class Admin extends Controller {
         $this->load->view("Template_BackEnd/left"); 
         $this->load->view("Template_BackEnd/urunDuzenle",$veriler);
         $this->load->view("Template_BackEnd/footer");
+        }
+        else{
+            $this->load->view("Entry/loginForm");
+        }
     }
     
      public function urunSil() {
+         if (session::get("login") == true) {
         $id = $_POST["id"];
         $form = $this->load->otherClasses('Form');
         $model = $this->load->model("Panel_Model");
@@ -390,6 +453,10 @@ class Admin extends Controller {
         $this->load->view("Template_BackEnd/left");
         $this->load->view("Template_BackEnd/sil");
         $this->load->view("Template_BackEnd/footer");
+        }
+        else{
+            $this->load->view("Entry/loginForm");
+        }
     }
 
 }
