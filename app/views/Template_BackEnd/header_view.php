@@ -54,14 +54,14 @@
 
         <header id="header">
             <hgroup>
-                <h1 class="site_title"><a href="index.html">Website Admin</a></h1>
+                <h1 class="site_title"><a href="<?php echo SITE_URL;?>/admin">Website Admin</a></h1>
                 <h2 class="section_title">Dashboard</h2><div class="btn_view_site"><a href="http://www.medialoot.com">View Site</a></div>
             </hgroup>
         </header> <!-- end of header bar -->
 
         <section id="secondary_bar">
             <div class="user">
-                <p><?php echo session::get("email"); ?></p>
+                <p><?php echo session::get("site_mail"); ?></p>
                 <!-- <a class="logout_user" href="#" title="Logout">Logout</a> -->
             </div>
             <div class="breadcrumbs_container">

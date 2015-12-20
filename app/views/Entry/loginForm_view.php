@@ -59,7 +59,7 @@
                                     <label class="panel-login">
                                         <div class="login_result"></div>
                                     </label>
-                                    <input class="form-control" placeholder="Kullanıcı Mail" id="username" type="text" name="email">
+                                    <input class="form-control" placeholder="Kullanıcı Mail" id="username" type="text" name="site_mail">
                                     <input class="form-control" placeholder="Şifre" id="password" type="password" name="password">
                                     <br></br>
                                     <input class="btn btn-lg btn-success btn-block" type="submit" id="login" value="Giriş Yap">

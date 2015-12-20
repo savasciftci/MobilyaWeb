@@ -23,8 +23,8 @@ class Panel_Model extends Model {
         return ($this->db->delete("table","table_id=$gelenid"));
     }
     //login select sorgusu
-     public function loginselect($email,$sifre) {
-        $sql = "SELECT * FROM ayar WHERE mail = '$email' AND sifre = '$sifre'";
+     public function loginselect($site_mail,$sifre) {
+        $sql = "SELECT * FROM ayar WHERE site_mail = '$site_mail' AND sifre = '$sifre'";
         error_log($sql);
         return $this->db->select($sql);
     }

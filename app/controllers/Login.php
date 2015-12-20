@@ -18,20 +18,20 @@ class Login extends Controller {
             if ($_POST) {
                 $form = $this->load->otherClasses('Form');
                 $model = $this->load->model("Panel_Model");
-                $form->post('email', TRUE);
+                $form->post('site_mail', TRUE);
                 $form->post('password', TRUE);
-                $loginMail = $form->values['email'];
+                $site_mail = $form->values['site_mail'];
                 $loginPassword = $form->values['password'];
-                if ($loginMail != "") {
-                    if (filter_var($loginMail, FILTER_VALIDATE_EMAIL)) {
+                if ($site_mail != "") {
+                    if (filter_var($site_mail, FILTER_VALIDATE_EMAIL)) {
                         if ($loginPassword != "") {
-                            $result = $model->loginselect($loginMail, md5($loginPassword));
+                            $result = $model->loginselect($site_mail, md5($loginPassword));
 
                             if ($result) {
                                 $ID = $result[0]["id"];
-                                $email = $result[0]["mail"];
+                                $email = $result[0]["$site_mail"];
                                 Session::set("login", TRUE);
-                                Session::set("email", $email);
+                                Session::set("site_mail", $site_mail);
                                 Session::set("ID", $ID);
                                 header("location:" . SITE_URL . "/Admin");
                             } else {
